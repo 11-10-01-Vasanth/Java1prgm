@@ -24,8 +24,8 @@ public class SortZerosones {
 		
 		System.out.println(Arrays.toString(a));
 		
-		int n[] = Arrays.stream(a).sorted().toArray();
-		
+		String b = Arrays.toString(Arrays.stream(a).filter(i -> i==0).toArray());
+		System.out.println(b);
 	}
 
 }
